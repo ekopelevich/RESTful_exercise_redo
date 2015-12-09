@@ -1,11 +1,11 @@
 doctype html
   html
   head
-    link(src= "/styles.css")
-    title title
-    meta something 
-    script(src= JQUERY)
+  meta(charset='utf-8') 
+  link(src= '/styles.css' rel='stylesheet')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js')
+  title #{title}
   body
-    h1 "Edit"
+    h1 #{title}
     a(href= "new") Create a new Squirrel!
     script(src="/app.js" type="javascript/text")

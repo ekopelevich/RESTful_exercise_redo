@@ -1,7 +1,12 @@
 body {
   background-color: #cbbd06;
+  font-family: sans-serif;
 }
 
 h1 {
   color: #FFF;
+}
+
+input {
+  margin: 5px;
 }

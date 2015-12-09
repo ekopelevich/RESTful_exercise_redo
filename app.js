@@ -11,18 +11,28 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser());
 
 //Create 7 Standard Routes for CRUD
-app.get('/', function( request, response ){
-  //New page - show all the squirrels
+
+//New page - show all the squirrels
+app.get('/squirrel', function( request, response ){
   var squirrels = db('squirrels').value();
   response.render('index', {title: 'Squirrels of the World'});
   console.log('Show all the squirrels!');
 });
 
-// app.post('/squirrel', function( request, response ){
-//   //Create a new squirrel
-//   console.log('create a new squirrel');
-// });
-//
+//Create a new squirrel
+app.get('/squirrel/new', function( request, response ){
+  response.render('new', {title: 'Create a New Squirrel'});
+  console.log('create a new squirrel');
+});
+
+//POST Create a new squirrel ???
+app.post('/squirrels/new', function (request, response) {
+  var name = req.body.name;
+  var breed = req.body.breed;
+  db('squirrels').push({name: name, type: type});
+  response.redirect('/squirrels');
+});
+
 // app.get('/squirrel/:name', function( request, response ){
 //   //Create individual?
 //   console.log('create an individual squirrel??');
