@@ -1,0 +1,23 @@
+{
+  "name": "restful_exercise_redo",
+  "version": "1.0.0",
+  "description": "Redoing the in class exercise from scratch",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekopelevich/RESTful_exercise_redo.git"
+  },
+  "author": "Elana Kopelevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ekopelevich/RESTful_exercise_redo/issues"
+  },
+  "homepage": "https://github.com/ekopelevich/RESTful_exercise_redo#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "lowdb": "^0.10.3"
+  }
+}

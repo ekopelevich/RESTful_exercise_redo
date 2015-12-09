@@ -1,0 +1,20 @@
+{
+  "squirrels": [
+    {
+      "name": "Bill",
+      "type": "flying squirrel"
+    },
+    {
+      "name": "Roger",
+      "type": "red squirrel"
+    },
+    {
+      "name": "Anita",
+      "type": "grey squirrel"
+    },
+    {
+      "name": "Francine",
+      "type": "fox squirrel"
+    }
+  ]
+}

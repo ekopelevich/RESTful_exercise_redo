@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    link(src= '/styles.css' rel='stylesheet')
+    meta(charset='utf-8') 
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js')
+    title title
+  body
+    h1 #{title}
+    //- each squirrel in squirrels
+    //-   a(href='/squirrels/' + squirrel.name)
+    //-   p #{squirrel.name}
+    a(href= "/new") Create a new Squirrel!
+    script(src='/app.js' type='text/javascript')
+      
+    
