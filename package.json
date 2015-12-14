@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/ekopelevich/RESTful_exercise_redo#readme",
   "dependencies": {
+    "busboy-body-parser": "0.0.9",
     "express": "^4.13.3",
+    "jade": "^1.11.0",
     "lowdb": "^0.10.3"
   }
 }

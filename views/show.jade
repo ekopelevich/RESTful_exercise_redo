@@ -1,11 +1,17 @@
 doctype html
   html
   head
-    link(src= "/styles.css")
-    title title
-    meta something 
-    script(src= JQUERY)
+    meta(charset='utf-8')
+    link(href="/style.css" rel="stylesheet")
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js')
+    title= #{title}
   body
-    h1 "show"
-    a(href= "new") Create a new Squirrel!
-    script(src="/app.js" type="javascript/text")
+    h1 #{title}
+    h2 Name:
+    p squirrel.name
+    h2 Type:
+    p squirrel.type
+    a(href="/squirrel/" + puppy.name + "/edit") Edit
+    br
+    a(href="/squirrel/") Home
+    script(type='text/javascript' src='/app.js')

@@ -8,4 +8,12 @@ doctype html
   body
     h1 #{title}
     a(href= "new") Create a new Squirrel!
+    label(for='name') Name 
+    input (type='text' name='name') 
+    label(for='type') Type 
+    input (type='text' name='type') 
     script(src="/app.js" type="javascript/text")
+    input(type='submit' value='submit' class='editButton') 
+    button.editButton(type="button") Update
+a(href="/puppies/") home
+script(type='text/javascript' src='/app.js')
